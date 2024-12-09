@@ -3,7 +3,6 @@ import { AdvancedMarker, Map, Marker, Pin, useMap } from "@vis.gl/react-google-m
 import motorcycle from '/motorcycle.png';
 import { useEffect, useState } from "react";
 
-//aqui se tienen que hacer las lineas de la ruta
 
 const RutaMapa = () => {
     const map = useMap();
@@ -28,7 +27,6 @@ const RutaMapa = () => {
     const handleFilterClick = (filterType) => {
         console.log(`Filtro seleccionado: ${filterType}`);
         setFilter(filterType);
-        // Aquí puedes implementar la lógica de filtrado
     };
 
     return (
@@ -46,7 +44,7 @@ const RutaMapa = () => {
                             <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                                 <div style={{ display: "flex", alignItems: "center" }}>
                                     <img
-                                        src="../../../public/abc_Cj6bVmu.png" // Cambia esto por la ruta a tu logo
+                                        src="../../../public/abc_Cj6bVmu.png"
                                         alt="Logo ABC"
                                         style={{ height: "50px", marginRight: "10px" }}
                                     />
@@ -94,7 +92,6 @@ const RutaMapa = () => {
                 </Container>
             </div>
 
-            {/* Contenedor del Mapa */}
             <Container fluid style={{ marginTop: "10px" }}>
                 <Row>
                     <Col md={12}>

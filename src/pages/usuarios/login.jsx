@@ -29,13 +29,12 @@ const Login = () => {
         throw new Error(data.message || "Error al iniciar sesión.");
       }
 
-      localStorage.setItem("token", data.token); // Guarda el token en localStorage
-      alert("Inicio de sesión exitoso");
+      localStorage.setItem("token", data.token);
 
       if (data.user.rol === "admin") {
-        navigate("/Listadmin"); // Redirige a la vista de administrador
+        navigate("/Listadmin");
       } else {
-        navigate("/rutas"); // Redirige a otra vista según el rol
+        navigate("/rutas");
       }
     } catch (error) {
       setError(error.message);

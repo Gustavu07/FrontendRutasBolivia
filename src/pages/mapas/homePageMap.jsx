@@ -67,7 +67,6 @@ const HomePageMapa = () => {
             {/* Navbar */}
             <MainMenu />
 
-            {/* Contenido principal con margen superior */}
             <div style={{ marginTop: "70px" }}>
                 <div
                     style={{
@@ -192,7 +191,6 @@ const HomePageMapa = () => {
                             ))}
                         </Col>
 
-                        {/* Columna para el mapa */}
                         <Col md={9}>
                             <Map
                                 onClick={(e) => {
